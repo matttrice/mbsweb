@@ -18,7 +18,7 @@ This shows on the right
 ```
 -->
 
-<script setup lang="ts">
+<script setup lang='ts'>
 const props = defineProps({
   class: {
     type: String,
@@ -27,10 +27,36 @@ const props = defineProps({
 </script>
 
 <template>
-<div class="grid grid-cols-4 gap-0 w-full h-full">
-    <div :class="props.class"><slot name="left" /></div>
-    <div :class="props.class"><slot name="physical" /></div>
-    <div :class="props.class"><slot name="spiritual" /></div>
-    <div :class="props.class"><slot name="right" /></div>
-  </div>
-</template>
+  <div class='grid grid-cols-4 gap-0 font-bold p-1'>
+    <div class='text-2xl' :class='props.class'>
+      <slot name='left' />
+    </div>
+
+    <div class='bg-gray-500
+              text-3xl
+              border-r-1
+              border-black 
+              [&>*:first-child]:text-5xl
+              [&>*:first-child]:border-b-2
+              [&>*:first-child]:border-black
+              [&>*:first-child]:font-bold'
+              :class='props.class'>
+      <slot name='spiritual' />
+    </div>
+
+    <div class='bg-sky-500
+              text-3xl
+              border-l-1
+              border-black
+              [&>*:first-child]:text-5xl
+              [&>*:first-child]:border-b-2
+              [&>*:first-child]:border-black
+              [&>*:first-child]:font-bold'
+              :class='props.class'>
+      <slot name='physical' />
+    </div>
+
+    <div class='text-2xl' :class='props.class'>
+      <slot name='right' />
+    </div>
+</div></template>

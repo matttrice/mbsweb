@@ -12,23 +12,43 @@ title: Physical & Spiritual
 layout: physical-spiritual
 ---
 ::left::
-<div v-click="1"><h1>Genesis 1:1</h1></div>
-<div v-click="2"><p>“In the beginning God created the HEAVENS and the EARTH...”</p></div>
-<div v-click="3"><h1>Internal Interpretation</h1></div>
+<div v-click='1'>
+  <h1>Genesis 1:1</h1>
+</div>
+<div v-click='2' class='text-xs'>
+  “In the beginning God created the HEAVENS and the EARTH...”
+</div>
+<div v-click='3' 
+  class='bg-blue-100 
+        rounded-lg
+        p-2 
+        m-t-3 
+        text-sm 
+        w-1/2 
+        text-blue-700
+        mx-auto'>
+    <h1><game-icons:archive-research /> Internal Interpretation</h1>
+  </div>
 
 ::spiritual::
-<div v-click="4"><h1>Heavens</h1></div>
-<div v-click="6"><h1>Invisible</h1></div>
-<div v-click="8"><h1>Unseen</h1></div>
+<div v-click='4'><h1>Heavens</h1></div>
+<div v-click='6'><h1>Invisible</h1></div>
+<div v-click='10'><h1>Unseen</h1></div>
+<div v-click='11'><h1>Eternal</h1></div>
 
 ::physical::
-<div v-click="4"><h1>Earth</h1></div>
-<div v-click="6"><h1>Visible</h1></div>
-<div v-click="8"><h1>Seen</h1></div>
+<div v-click='4'><h1>Earth</h1></div>
+<div v-click='6'><h1>Visible</h1></div>
+<div v-click='8'><h1>Seen</h1></div>
+<div v-click='9'><h1>Temporal</h1></div>
 
 ::right::
-<div v-click="5"><h1>Colossians 1:15-16</h1></div>
-<div v-click="7"><h1>2 Corinthians 4:17</h1></div>
+<div v-click='12'>
+  Hebrews 11:1 <br/>
+  <span class='italic text-base align-text-top'>Evidence of unseen</span>
+</div>
+<div v-click='5'><h1>Colossians 1:15-16</h1></div>
+<div v-click='7'><h1>2 Corinthians 4:17</h1></div>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
