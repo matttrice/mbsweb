@@ -6,18 +6,18 @@ info: |
   ## MBS Lesson 1
 drawings:
   persist: true
-transition: slide-left
+transition: slide-down
 css: unocss
 title: Physical & Spiritual
 layout: physical-spiritual
 ---
+
 ::left::
 <div v-click='1'>
   <h1>Genesis 1:1</h1>
 </div>
-<div v-click='2' class='text-xs'>
-  “In the beginning God created the HEAVENS and the EARTH...”
-</div>
+<div v-click='2' class='text-xs group/ii'>
+  “In the beginning God created the <span class='group/ii'>HEAVENS</span> and the <span>EARTH</span>...”</div>
 <div v-click='3' 
   class='bg-blue-100 
         rounded-lg
@@ -27,7 +27,7 @@ layout: physical-spiritual
         w-1/2 
         text-blue-700
         mx-auto'>
-    <h1><game-icons:archive-research /> Internal Interpretation</h1>
+    <h1><game-icons:archive-research class="text-2xl -mb-2" /> Internal Interpretation</h1>
   </div>
 
 ::spiritual::
