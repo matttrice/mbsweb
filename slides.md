@@ -47,7 +47,7 @@ layout: physical-spiritual
   Eternal
 </div>
 
-<div v-click='24' bg='white' m='b-15' p='b-28 t-1' pos='absolute' w='full' z='1'>
+<div v-click='24' v-motion-roll-right v-if='$slidev.nav.clicks >= 24' class='brick'>
     Causes
 </div>
 <div v-click='22' font='normal' m='t-9' pos='relative' z='2'>
@@ -56,10 +56,10 @@ layout: physical-spiritual
 <div v-click='20' font='normal' pos='relative' z='2'>
   Force of Wind
 </div>
-<div v-click='18' font='normal' m='t-1' pos='relative'  text='2xl' z='2'>
+<div v-click='18' font='normal' m='t-1' pos='relative' text='2xl' z='2'>
   Force of Electricity
 </div>
-<div v-click='25' bg='white' m='b-15' p='b-28 t-1' pos='absolute' w='full' z='1'>
+<div v-click='25' bg="white" m='b-15' p='b-28 t-1' pos='absolute' w='full' z='1'>
     Energy
 </div>
 
@@ -78,9 +78,10 @@ layout: physical-spiritual
   Temporal
 </div>
 
-<div v-click='23' class='brick'>
+<div v-click='23' v-motion-roll-right v-if='$slidev.nav.clicks >= 23' class='brick'>
   Effects
-  </div>
+</div>
+<arrow v-click="3" x1='400' y1='420' x2='230' y2='330' color='#564' width='after' arrowSize='1' />
 <div v-click='21' class='relative m-t-9 z-2 font-normal'>
   Things fall
 </div>
@@ -118,6 +119,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
     @apply bg-white p-b-28 p-t-1 absolute w-full m-b-15 z-1
   }
 </style>
+
 ---
 
 ## transition: fade-out
