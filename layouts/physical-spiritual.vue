@@ -32,7 +32,8 @@ const props = defineProps({
       <slot name='left' />
     </div>
 
-    <div class='bg-gray-500
+    <div class='bg-sky-400
+              text-blue-800
               text-3xl
               border-r-1
               border-black 
@@ -44,7 +45,8 @@ const props = defineProps({
       <slot name='spiritual' />
     </div>
 
-    <div class='bg-sky-500
+    <div class='bg-gray-400
+              text-zinc-800
               text-3xl
               border-l-1
               border-black
