@@ -14,23 +14,26 @@ layout: physical-spiritual
 
 ::left::
 
-<div v-click='1'>
-  Genesis 1:1
-</div>
+Genesis 1:1
 <div v-click='2' class='text-xs group/ii'>
   “In the beginning God created the 
   <span class='group/ii'>HEAVENS</span> and the <span>EARTH</span>...”</div>
-  <div v-click='3' class='ii-btn'>
-    <game-icons:archive-research class="ii-ion" /> Internal Interpretation
+  <div v-click='3' class='sidebox'>
+    <game-icons:archive-research class="sidebox-icon" /> Internal Interpretation
   </div>
   <div v-click='14' class='m-t-5'>
     Romans 1:20 <br/>
   <span 
     v-click='15' 
-    class='italic font-light text-base align-text-top'>
-      How can one trust what can't be seen?
+    class='italic font-light block leading-snug text-base'>
+      If you can't see it, how can you trust it exists?
     </span>
   </div>
+<div v-click='27' class='sidebox -m-r-3'>Forms of what?</div>
+<arrow v-motion-slide-right z='2' x1='230' y1='290' x2='310' y2='322' 
+  color='black' 
+  width='3' 
+  arrowSize='3' />
 
 ::spiritual::
 
@@ -47,19 +50,19 @@ layout: physical-spiritual
   Eternal
 </div>
 
-<div v-click='24' v-motion-roll-right v-if='$slidev.nav.clicks >= 24' class='brick'>
-    Causes
+<div v-click='17' class='brick'>
+    <div v-click='23'> Causes</div>
 </div>
 <div v-click='22' font='normal' m='t-9' pos='relative' z='2'>
-  Force of Gravity
+  Gravity Force
 </div>
 <div v-click='20' font='normal' pos='relative' z='2'>
-  Force of Wind
+  Wind Force
 </div>
-<div v-click='18' font='normal' m='t-1' pos='relative' text='2xl' z='2'>
-  Force of Electricity
+<div v-click='18' font='normal' m='t-1' pos='relative' z='2'>
+  Electricity Force
 </div>
-<div v-click='25' bg="white" m='b-15' p='b-28 t-1' pos='absolute' w='full' z='1'>
+<div v-click='28' bg="white" m='b-15' p='b-28 t-1' pos='absolute' w='full' z='1'>
     Energy
 </div>
 
@@ -78,18 +81,17 @@ layout: physical-spiritual
   Temporal
 </div>
 
-<div v-click='23' v-motion-roll-right v-if='$slidev.nav.clicks >= 23' class='brick'>
-  Effects
+<div v-click='17' class='brick'>
+  <div v-click='24'> Effects </div>
 </div>
-<arrow v-click="3" x1='400' y1='420' x2='230' y2='330' color='#564' width='after' arrowSize='1' />
 <div v-click='21' class='relative m-t-9 z-2 font-normal'>
-  Things fall
+  Objects Fall
 </div>
 <div v-click='19' class='relative z-2 font-normal'>
-  Trees sway
+  Trees Move
 </div>
 <div v-click='17' class='relative z-2 font-normal'>
-  Fan spins
+  Motors Spin
 </div>
 <div v-click='26' class='brick'>
   Matter
@@ -109,9 +111,16 @@ layout: physical-spiritual
   class='italic font-light text-base align-text-top m-t-5'>
   Is it safe to put a paperclip in a light socket? 
 </div>
+<div v-click='25' class='sidebox -m-l-3 m-t-10'><i>What</i> is effected?</div>
+<arrow 
+  v-click='25' v-motion-slide-left v-if='$slidev.nav.clicks >= 25' 
+  class='-m-l-155' z='3' x1='630' y1='260' x2='560' y2='322' 
+  color='black' 
+  width='3' 
+  arrowSize='3' />
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes
 -->
 
 <style>
