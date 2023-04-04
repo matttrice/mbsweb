@@ -15,12 +15,14 @@ layout: physical-spiritual
 ::left::
 
 Genesis 1:1
+
 <div v-click='2' class='text-xs group/ii'>
   “In the beginning God created the 
   <span class='group/ii'>HEAVENS</span> and the <span>EARTH</span>...”</div>
   <div v-click='3' class='sidebox'>
-    <game-icons:archive-research class="sidebox-icon" /> Internal Interpretation
-  </div>
+    <game-icons:archive-research class="text-2xl -mb-2" /> 
+      Internal Interpretation
+    </div>
   <div v-click='14' class='m-t-5'>
     Romans 1:20 <br/>
   <span 
@@ -29,8 +31,9 @@ Genesis 1:1
       If you can't see it, how can you trust it exists?
     </span>
   </div>
-<div v-click='27' class='sidebox -m-r-3'>Forms of what?</div>
-<arrow v-motion-slide-right z='2' x1='230' y1='290' x2='310' y2='322' 
+<div v-click='27' class='sidebox m-l-33'>Forms of what?</div>
+<arrow v-click='27' v-if='$slidev.nav.clicks >= 27'
+  z='2' x1='230' y1='290' x2='310' y2='322' 
   color='black' 
   width='3' 
   arrowSize='3' />
@@ -53,7 +56,7 @@ Genesis 1:1
 <div v-click='17' class='brick'>
     <div v-click='23'> Causes</div>
 </div>
-<div v-click='22' font='normal' m='t-9' pos='relative' z='2'>
+<div v-click='22' class='relative m-t-9 z-2 font-normal' pos='relative' z='2'>
   Gravity Force
 </div>
 <div v-click='20' font='normal' pos='relative' z='2'>
@@ -111,7 +114,7 @@ Genesis 1:1
   class='italic font-light text-base align-text-top m-t-5'>
   Is it safe to put a paperclip in a light socket? 
 </div>
-<div v-click='25' class='sidebox -m-l-3 m-t-10'><i>What</i> is effected?</div>
+<div v-click='25' class='sidebox -m-l-3'><i>What</i> is effected?</div>
 <arrow 
   v-click='25' v-motion-slide-left v-if='$slidev.nav.clicks >= 25' 
   class='-m-l-155' z='3' x1='630' y1='260' x2='560' y2='322' 
@@ -122,12 +125,6 @@ Genesis 1:1
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes
 -->
-
-<style>
-  .brick {
-    @apply bg-white p-b-28 p-t-1 absolute w-full m-b-15 z-1
-  }
-</style>
 
 ---
 

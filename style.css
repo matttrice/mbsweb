@@ -5,11 +5,3 @@
   .slidev-vclick-hidden {
     transform: scale(0);
   } */
-
-.sidebox {
-  @apply rounded-lg p-2 m-t-3 bg-white text-base w-1/2 text-blue-700 mx-auto;
-}
-
-.sidebox-icon {
-  @apply text-2xl -mb-2;
-}

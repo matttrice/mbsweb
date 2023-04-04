@@ -27,38 +27,49 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class='grid grid-cols-4 gap-0 font-bold p-1'>
+  <div class='grid grid-cols-[1fr_1fr_1px_1fr_1fr]'>
+
+    <!--------------left------------------->
     <div class='text-2xl' :class='props.class'>
       <slot name='left' />
     </div>
 
+    <!--------------spiritual------------------->
     <div class='bg-sky-400
-              text-blue-800
-              text-3xl
-              border-r-1
-              border-black 
-              [&>*:first-child]:text-5xl
-              [&>*:first-child]:border-b-2
-              [&>*:first-child]:border-black
-              [&>*:first-child]:font-bold'
-              :class='props.class'>
+                    text-blue-800
+                    brick-head' :class='props.class'>
       <slot name='spiritual' />
     </div>
 
+    <!--------------middle------------------->
+    <div class='w-0 space-x-0' :class='props.class'>
+      <slot name='middle' />
+    </div>
+
+    <!--------------physical------------------->
     <div class='bg-gray-400
-              text-zinc-800
-              text-3xl
-              border-l-1
-              border-black
-              [&>*:first-child]:text-5xl
-              [&>*:first-child]:border-b-2
-              [&>*:first-child]:border-black
-              [&>*:first-child]:font-bold'
-              :class='props.class'>
+                    text-zinc-800
+                    brick-head' :class='props.class'>
       <slot name='physical' />
     </div>
 
+    <!--------------right------------------->
     <div class='text-2xl' :class='props.class'>
       <slot name='right' />
     </div>
-</div></template>
+  </div>
+</template>
+
+<style>
+.brick-head {
+  @apply text-3xl border-black [&>*: first-child]:text-5xl [&>*:first-child]:border-b-2 [&>*:first-child]:border-black [&>*:first-child]:font-bold
+}
+
+.brick {
+  @apply bg-white p-b-28 p-t-1 absolute w-full m-b-15 z-1
+}
+
+.sidebox {
+  @apply rounded-lg p-2 m-t-3 bg-white text-base w-1/2 text-blue-700;
+}
+</style>
