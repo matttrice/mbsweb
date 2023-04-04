@@ -10,6 +10,9 @@ This shows on the left
 ::physical:: 
 This shows left center in gray
 
+::middle::
+Center of page
+
 ::spiritual::
 This shows right center in blue
 
@@ -27,7 +30,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class='grid grid-cols-[1fr_1fr_1px_1fr_1fr]'>
+  <div class='grid grid-cols-[1fr_1fr_5px_1fr_1fr]'>
 
     <!--------------left------------------->
     <div class='text-2xl' :class='props.class'>
@@ -36,20 +39,20 @@ const props = defineProps({
 
     <!--------------spiritual------------------->
     <div class='bg-sky-400
-                    text-blue-800
-                    brick-head' :class='props.class'>
+                      text-blue-800
+                      brick-head' :class='props.class'>
       <slot name='spiritual' />
     </div>
 
     <!--------------middle------------------->
-    <div class='w-0 space-x-0' :class='props.class'>
+    <div z='2' :class='props.class'>
       <slot name='middle' />
     </div>
 
     <!--------------physical------------------->
     <div class='bg-gray-400
-                    text-zinc-800
-                    brick-head' :class='props.class'>
+                      text-zinc-800
+                      brick-head' :class='props.class'>
       <slot name='physical' />
     </div>
 
