@@ -65,7 +65,7 @@ const props = defineProps({
 
 <style>
 .brick-head {
-  @apply text-3xl border-black [&>*: first-child]:text-5xl [&>*:first-child]:border-b-2 [&>*:first-child]:border-black [&>*:first-child]:font-bold
+  @apply text-3xl border-black [&>*:first-child]:text-5xl [&>*:first-child]:border-b-2 [&>*:first-child]:border-black [&>*:first-child]:font-bold
 }
 
 .brick {
